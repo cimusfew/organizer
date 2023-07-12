@@ -1,0 +1,9 @@
+moment.updateLocale('en', {week : {dow:1}});
+  const startDay = moment().startOf('month').startOf('week');
+  const endDay = moment().endOf('month').endOf('week');
+  const calendar = [];
+  const tempDay = startDay.clone(); 
+  while(!tempDay.isAfter(endDay)){
+    calendar.push(tempDay.clone());
+    tempDay.add(1,'day');
+  }

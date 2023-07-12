@@ -1,0 +1,7 @@
+.monitor{
+  display: flex;
+  justify-content: space-between;
+  background-color: #272525;
+  border: 1px solid #dddbdb;
+  
+}
